@@ -1,0 +1,77 @@
+@import 'global__style';
+//размер текста
+$h1-name: 70px; //
+$h2-name: 50px;
+$h3-name: 30px;
+.main__text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255, 0.9);
+    border: 5px solid rgb(46,85,185,1);
+    border-radius: 25px;
+    color: $color-h1;
+    align-items: center;
+    h1{
+        font-family: "CTCSPLASH";
+        font-size: $h1-name;
+    }
+    h2{
+        font-family: "CTCSPLASH";
+        font-size: $h2-name;
+        margin-bottom: 10px;
+    }
+    h3{
+        
+        font-size: $h3-name;
+    }
+}
+
+
+
+@media (max-width: 1400px){
+    $h1-name: 60px; //
+    $h2-name: 40px;
+    $h3-name: 20px;
+    .main__text{
+        h1{
+            
+            font-size: $h1-name;
+        }
+        h2{
+            
+            font-size: $h2-name;
+            margin-bottom: 10px;
+        }
+        h3{
+            
+            font-size: $h3-name;
+        }
+    }
+}
+
+//mobile__devices
+@media (max-width: 820px){
+    $h1-name: 60px; //
+    $h2-name: 30px;
+    $h3-name: 15px;
+    .main__text{
+        h1{
+            
+            font-size: $h1-name;
+            text-decoration: underline  wavy pink;
+            
+        }
+        h2{
+            
+            margin-top: 15px;
+            font-size: $h2-name;
+            
+            margin-bottom: 10px;
+        }
+        h3{
+            
+            font-size: $h3-name;
+        }
+    }
+}

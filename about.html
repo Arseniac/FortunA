@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фортуна | Транспортно-логистическая компания</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/about__style.min.css">
+
+
+</head>
+<body>
+    
+    <section class="menu">
+
+        
+
+        <div class="container">
+
+            <img src="images/logo.png" alt="" class="menu-top__img">
+            
+            <ul class="accordion-menu">
+
+                <li>
+                    <div class="dropdownlink dropdownlink__main">
+                        <a href="index.html" class="dropdownlink-a">Главная</a>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div class="dropdownlink dropdownlink__about press">
+                        <a href="about.html" class="dropdownlink-a">О нас</a>
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div class="dropdownlink dropdownlink__uslug"> 
+                        <a href="#" class="dropdownlink-a acco">Наши услуги</a>
+                        <img class="dropdownlink__uslug-arrow" src="images/chevron-white.png" alt="">
+                    </div>
+
+                    <ul class="submenuItems">
+                        <li>
+                            <a class="calculate__this" href="#calculator">
+                                Перевозка контейнеров
+                            </a>
+                            
+                        </li>
+
+                        <li><a href="#">Хранение любых контейнеров</a></li>
+                        <li><a href="#">Внутри портовое экспедирование</a></li>
+                        <li><a href="#">Перетарка груза</a></li>
+                        <li><a href="#">Таможенное оформление</a></li>
+                        <li><a href="#">Перевозка груза тент. транспортом</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="dropdownlink dropdownlink__contacts">
+                        <a href="contacts.html" class="dropdownlink-a">Контакты</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="burger__inner">
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main__text">
+                <div class="main__text-inner">
+                    <h2>О НАС</h2>
+
+                    <div class="main__text-about">
+                        <img src="images/about.jpg" alt="" class="main__text-img">
+                        <div class="text">
+                            <p>Транспортно-логистическая компания Фортуна начала свой путь в 2019 году, 
+                                с тех пор мы зарекомендовали себя как надежный партнер для десятков наших 
+                                клиентов. </p>
+                            <p>Наша компания предоставляет полный спектр транспортно-логистических
+                                услуг, от портового экспедирования до доставки вашего груза до конечной точки, 
+                                воспользовавшись нашим собственным парком. </p>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    <p>Большой опыт работы на российском и
+                        международном рынках дают нам возможность предлагать клиентам наиболее 
+                        рациональные и выгодные способы транспортировки грузов</p>
+                   
+
+                    <div class="info">
+                        <ul>
+                            <li>ИНН 7810780834</li>
+                            <li>КПП 781001001</li>
+                            <li>ОГРН 1197847228072</li>
+                        </ul>
+
+                        <p>Юридический адрес: 196105, Санкт-Петербург г, 
+                            Благодатная ул, дом 65, литер А, офис 42-А</p>
+                    </div>
+                
+                
+                
+                </div>  
+            </div> 
+            <div id="calculator" class="popup">
+                <a href="#" class="popup__area"></a>
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <a href="#" class="popup__close">
+                            <div class="krest"></div>
+                        </a>
+                        
+                        
+        
+                        <div class="calculator-content">
+
+                            <div class="calculator-content-title">
+                                <h2>Рассчитайте стоимость Вашей перевозки</h2>
+                            </div>
+
+                            <div class="calculator-content-tarif calculator-content-item">
+
+                                <div class="title">
+                                    Выберите тариф:
+                                </div>
+                                
+
+                                <div class="calculator-content-tarif-btns">
+
+                                    <div data-name="to20" class="tons active">
+                                        <div class="tons-text">до 20<br> тонн</div>
+                                        
+                                    </div>
+                                    <div data-name="to26" class="tons">
+                                        <div class="tons-text">до 26<br> тонн</div>
+                                        
+                                    </div>
+    
+                                </div>
+                            </div>
+                          
+                            <div class="calculator-content-inputs calculator-content-item">
+
+                                <div class="title">
+                                    Расстояние (км):
+                                </div>
+                                <div class="input">
+                                    <input placeholder="0 КМ" type="number" id="total-distance" value="" oninput="calculation(totalDistance.value)">
+                                    
+                                </div>
+                                
+
+                            </div>
+        
+                            <div class="calculator-content-result calculator-content-item">
+                                
+                                <div class="title">Конечная сумма<br> грузоперевозки:</div>
+                                <div class="value-wrapper">
+                                    <div class="value" id="amount-of">0<span> ₽</span></div>
+                                </div>
+                                
+
+                            </div>
+
+                            <div class="calculator-content-descr">
+                                * Подробнее вы можете узнать у наших 
+                                специалистов логистики по номеру +7(964)-611-98-13
+                            </div>
+
+                            <div class="calculator-content-phone">
+                                <a href="tel:+7966119813" class="to_phone">Позвонить сейчас</a>
+                                
+                            </div>
+
+                        </div>
+        
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <ul class="submenu">
+                <li><a href="tel:+7966119813"><i class="fa fa-phone"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/fc87bb784d.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/calculator.js"></script>
+
+    <script src="js/my__jquery.js"></script>
+
+    <script src="js/accord.js"></script>
+</body>
+</html>
